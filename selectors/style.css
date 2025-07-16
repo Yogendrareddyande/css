@@ -1,0 +1,151 @@
+/* === Global === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: #333;
+}
+
+/* === Navigation === */
+#nav {
+  background-color: #111;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+#nav p:hover {
+  background-color: #222;
+}
+
+/* === Header === */
+#header {
+  background-color: #a50721;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+}
+#header p {
+  font-size: 1.1em;
+}
+
+/* === Search Section === */
+#search-section {
+  text-align: center;
+  margin: 20px 0;
+}
+#search-section input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#search-section input[type="text"]:focus {
+  border-color: #00c921;
+  outline: none;
+}
+#search-section input::placeholder {
+  color: #a80f0f;
+}
+.search-btn {
+  background-color: #c9002b;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-btn:hover {
+  background-color: #009981;
+}
+
+#featured {
+  background-color: #b6bcbe;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+#featured button {
+  margin-top: 10px;
+}
+
+
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.movie-card {
+  background-color: rgb(236, 230, 227);
+  padding: 15px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+ 
+}
+
+/* Pseudo-classes + Pseudo-elements */
+.movie-card:hover {
+  transform: scale(1.04);
+}
+.movie-card:first-child {
+  border: 2px solid #afb1af;
+}
+.movie-card:last-child {
+  border: 2px solid #bebbbc;
+}
+.movie-card:nth-child(2){
+   border: 2px solid #bebbbc;
+ 
+}
+.movie-card h2 + p {
+  font-style: italic;
+}
+.movie-card img ~ button {
+  margin-top: 10px;
+}
+.movie-card::before {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 2em;
+}
+
+/* Buttons */
+button[type="button"] {
+  background-color: #c9002b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+button[type="button"]:hover {
+  background-color: #009981;
+}
+button[type="button"]:active {
+  transform: scale(0.96);
+}
+
+/* Footer */
+#footer {
+  margin-top: 40px;
+  background-color: #8e1313;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+}

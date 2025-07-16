@@ -1,0 +1,55 @@
+/* 
+
+    CSS Positions : 
+    1. static : default value
+    2. relative : relative to its original position
+    3. absolute : relative to nearest positioned ancestor
+    4. fixed : relative to viewport
+    5. sticky : relative to nearest positioned ancestor, but also "sticks" to the viewport.
+
+*/
+
+div{
+    height: 130px;
+    width: 130px;
+    background-color: grey;
+    margin: 10px;
+}
+
+
+.static{
+    background-color: rgb(247, 0, 255);
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+.relative{
+    background-color: rgb(0, 89, 255);
+    position: relative;
+    top: -100px;
+    left: 500px;
+
+}   
+
+.absolute{
+    background-color: green;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+
+    
+}
+.fixed{
+   background-color: red;
+    position: fixed;
+    top : 0px;
+    left: 300px;
+   /*zindex:1000*/
+}
+.sticky{
+    background-color: yellow;
+    position: sticky;
+    top:150px;
+    
+}

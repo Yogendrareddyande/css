@@ -1,0 +1,19 @@
+.container{
+    width: 90%;
+    margin: 100px auto;
+    border: 1px solid black;
+    height: 500px;
+    /* Background props */
+    background-color: #b57070;
+   
+   background-image: url(https://etimg.etb2bimg.com/photo/100801407.cms);
+    background-repeat:no-repeat;
+    background-size:50% 50%;
+    background-position:center;
+    /*center top,center bott0m,left bott0m,right bottom*/
+    background-attachment:scroll;
+    /* End of background props */
+    /* shorthand for Bg props */
+    
+
+}
