@@ -1,0 +1,32 @@
+.container{
+    border: 1px solid black;
+    width: 80%;
+    height: 500px;
+    margin: 100px 100px;
+}
+.container .box{
+    width: 300px;
+    height: 300px;
+    margin: 100px 100px;
+    background-color: aqua;
+      /* transform: rotateY(80deg); */
+  /* transform: scale(1.1); */
+  /* transform:skewY(20deg); */
+  /* transform: translateY(100px); */
+/* transform:  matrix3d() ; */
+    /* transition-duration:2s; */
+    /* transition-property: all; */
+    /* transition-timing-function:ease-in; */
+    /* transition-timing-function:cubic-bezier(0,1,1,-0.01); */
+    transition-delay: 3s;
+     transition: all 2s cubic-bezier(.01,.98,.99,.01) 10s;
+
+
+}
+.box img:hover{
+    background-color: rgb(68, 0, 255);
+    width: 500px;
+    height: 500px;
+    
+
+}
