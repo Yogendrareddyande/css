@@ -52,6 +52,10 @@
     border-radius: 5px;
 
 }
+/* .main-content{
+  padding: 30px;
+
+} */
 .main-article {
   display: flex;
   background-color: #d2c8c8;
@@ -64,10 +68,8 @@
 .main-article img {
   width: 45%;
   height: 300px;
-  object-fit: cover;
   border-radius: 12px;
 }
-
 .article-text {
   width: 50%;
   padding: 20px 24px;
@@ -126,11 +128,12 @@
 }
 .article-grid {
   display: flex;
+  
   justify-content: space-between;
   gap: 10px;
   margin: 20px 60px ;
   width: 91%;
-  height: 100px;
+  height: 250px;
 }
 
 .small-article {
@@ -147,10 +150,9 @@
 
 
 .small-article img {
-  width: 110px;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 8px;
+  width: 250px;
+  height: 215px;
+  border-radius: 5px;
 }
 
 .small-article .info {
@@ -163,7 +165,7 @@
   font-size: 1rem;
   font-weight: 600;
   color: #111827;
-  margin: 8px 0;
+  
 }
 
 .small-article .tag {
@@ -179,11 +181,13 @@
 }
 
 .tag.tech {
+  margin-top: 70px;
   background-color: #97989d;
   color: #6366f1;
 }
 
 .tag.travel {
+  margin-top:70px;
   background-color:red;
   color: #000000;
 }
@@ -416,13 +420,15 @@
 
 .newsletter-form {
   display: flex;
+  width: 50%;
   flex-wrap: wrap;
   gap: 10px;
+
 }
 
 .newsletter-form input {
-  flex: 1;
-  min-width: 220px;
+   flex: 1; 
+  width: 100px;
   padding: 10px 14px;
   font-size: 1rem;
   border: 1px solid #d1d5db;
@@ -444,13 +450,18 @@ footer p{
   margin: 20px; 
   color: #333;
   font-weight: 500;
+  
 }
-footer {
-    background-color: rgb(213, 207, 207);
+footer a{
+  text-decoration: none;
+}
+footer{
+  background-color: rgb(213, 207, 207);
   padding: 10px 0;
   width: 100%;
   border-radius: 2px;
   position: sticky;
+  
   top: 0;
   z-index: 10;
   display: flex;
