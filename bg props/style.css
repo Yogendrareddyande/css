@@ -8,7 +8,7 @@
    
    background-image: url(https://etimg.etb2bimg.com/photo/100801407.cms);
     background-repeat:no-repeat;
-    background-size:50% 50%;
+    background-size:cover;
     background-position:center;
     /*center top,center bott0m,left bott0m,right bottom*/
     background-attachment:scroll;
