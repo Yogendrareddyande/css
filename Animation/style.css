@@ -1,0 +1,61 @@
+.container{
+    border: 1px solid black;
+    height: 500px;
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+}
+.container .box{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: Yogi;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-fill-mode:forwards;
+    /* animation-direction: alternate; */
+    animation-delay: 1s;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes Yogi{
+    /* from{
+        background-color: chartreuse;
+    }
+    to{
+        background-color: blueviolet;
+    } */
+     0%{
+        background-color: chartreuse;
+        top: 0;
+        left: 0;
+     }
+     25%{
+        background-color: aqua;
+        top: 0;
+        left: 90%;
+     }
+     50%{
+        background-color: blueviolet;
+        top: 350px;
+        left: 90%;
+     }
+     75%{
+        background-color: crimson;
+        top:350px;
+        left: 0;
+     }
+    100%{
+        background-color: chocolate;
+        top: 0;
+        left: 0;
+    }
+}
+
+p{
+    padding: 30px 20px;
+}
